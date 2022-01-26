@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: #fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10px;
+  background-color: var(--Light-gray);
+  width: 1440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .center {
+    width: 375px;
+  }
+}
+.card {
+  background-color: #fff;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.card h1 {
+  font-family: "Outfit", "Sans-serif";
+  font-size: 25px;
+  font-weight: 700;
+}
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Grayish-blue);
+  line-height: 1.5;
+}
